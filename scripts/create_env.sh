@@ -1,10 +1,12 @@
-#create env
-conda create -n whisper_finetuning python=3.9
-conda activate whisper_finetuning
 #add apt packages
 add-apt-repository -y ppa:jonathonf/ffmpeg-4
 apt update
 apt install -y ffmpeg git git-lfs
+
+#create env
+conda create -n whisper_finetuning python=3.9
+conda activate whisper_finetuning
+
 # install conda packages
 conda install -y jupyter scikit-learn numpy pandas matplotlib
 conda install -y -c pyviz holoviews bokeh
@@ -15,7 +17,7 @@ conda install -y pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c 
 
 #install pip packages
 python -m pip install -U pip
-python -m pip install -U tensorflow
+python -m pip install tensorflow
 
 python -m pip install librosa \
 soundfile \
