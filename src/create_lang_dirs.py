@@ -9,7 +9,7 @@ from tqdm import tqdm
 
 def map_new_path(row):
     filename = uuid(str(row["old_path"]) + row["sentence"])
-    lang_file = "audio" / pathlib.Path(filename)
+    lang_file = "train" / pathlib.Path(filename)
     lang_file = row["lang"] / lang_file
     lang_file = ("../data" / lang_file).with_suffix(".mp3")
     return lang_file
