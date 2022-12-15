@@ -127,7 +127,7 @@ if __name__ == "__main__":
                     exports.append(result)
     exports = pd.DataFrame(exports)
     exports.to_json(
-        "../data/filtered_datasets/kannada/metadata_test.jsonl",
+        "../data/filtered_datasets/kannada/metadata.jsonl",
         lines=True,
         orient="records",
     )
