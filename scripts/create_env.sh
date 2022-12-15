@@ -29,4 +29,7 @@ more-itertools \
 "wandb>=0.13.6" \
 bitsandbytes \
 audiomentations \
-pydub
+pydub \
+ptube \
+gradio \
+altair
