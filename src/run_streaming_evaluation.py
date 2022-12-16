@@ -68,7 +68,7 @@ def main(args):
     )
 
     # Only uncomment for debugging
-    dataset = dataset.take(args.max_eval_samples)
+    # dataset = dataset.take(args.max_eval_samples)
 
     dataset = dataset.cast_column("audio", Audio(sampling_rate=16000))
     dataset = dataset.map(normalise)
